@@ -1,9 +1,10 @@
 
-## Put comments here that give an overall description of what your
-## functions do
+## Theses functions work together to calculate the inverse of an ivertable matrix and cache the result in memory
+## The makeCacheMatrix function creates a list will be  the argument for the cacheSolve function
+## It assume that the matrix supplied is always invertible, error will happen for not invertable matrixes
 
-## Write a short comment describing this function
 
+## This function creates a special "matrix" object (list) that can cache its inverse using the casheSolve function.
 makeCacheMatrix <- function(x = matrix()) {
         
         m <- NULL
@@ -19,11 +20,11 @@ makeCacheMatrix <- function(x = matrix()) {
              getinv = getinv)
 }
 
-}
 
 
-## Write a short comment describing this function
 
+##  This function computes the inverse of the special "matrix" returned by makeCacheMatrix 
+## If the inverse has already been calculated then the cachesolve should retrieve the inverse from the cache.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinv()
@@ -37,4 +38,4 @@ cacheSolve <- function(x, ...) {
         m
 }
         
-}
+
