@@ -3,9 +3,9 @@
 ## Adapted by Mario Fiamenghi from the  "Caching the Mean of a Vector" example from Programming Assignment 2
 
 
-## Theses functions work together to calculate the inverse of an ivertable matrix and cache the result in memory
-## The makeCacheMatrix function creates a list will become the argument for the cacheSolve function
-## It assume that the matrix supplied is always invertible, error will happen for not invertable matrixes
+## Theses functions work together to calculate the inverse of an invertable matrix and cache the result in memory
+## The makeCacheMatrix function creates a list that will become the argument for the cacheSolve function
+## It assume that the matrix supplied is always invertible, error will occur for not invertable matrixes
 
 
 ## This function creates a special "matrix" object (list) that can cache its inverse using the casheSolve function.
